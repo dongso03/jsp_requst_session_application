@@ -8,9 +8,9 @@
 </head>
 <body>
 	<%
-		session.invalidate();
+	session.invalidate();
 	%>
 	<jsp:include page="menu.jsp"></jsp:include>
-	<p>로그아웃 되었습니다.</p>
+	<p>logout complete</p>
 </body>
 </html>

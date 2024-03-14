@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>서비스 컨텐츠</title>
+<title>회원 가입 완료</title>
 </head>
 <body>
-	<jsp:include page="menu.jsp"></jsp:include>
-	<p>컨텐츠 텍스트</p>
+	<p>회원가입 완료!</p>
+	<a href="index.jsp">홈으로 돌아가기</a>
 </body>
 </html>

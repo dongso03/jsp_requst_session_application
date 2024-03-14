@@ -5,10 +5,30 @@ import java.util.Objects;
 public class User {
 	private String id;
 	private String password;
+	private String role;
+	
+	
+	public User(String role) {
+		super();
+		this.role = role;
+	}
+	public User(String id, String password, String role) {
+		super();
+		this.id = id;
+		this.password = password;
+		this.role = role;
+	}
 	public User(String id, String password) {
 		super();
 		this.id = id;
 		this.password = password;
+	}
+	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	public String getId() {
 		return id;
@@ -37,4 +57,9 @@ public class User {
 		User other = (User) obj;
 		return Objects.equals(id, other.id) && Objects.equals(password, other.password);
 	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", password=" + password + "]";
+	}
+	
 }
